@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Buurtje U N O</title>
+    <link rel="stylesheet" href="styleshome.css">
+    <style>
+        .buttons-container {
+            text-align: right;
+        }
+        button {
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="text-header1">
+        <h1>BUURTJE U N O</h1>
+    </div>
+    <div class="text-container1">
+        <h2>Voor Iedereen<br>Wat  Wils</h2>
+    </div>
+    <div class="text-container2">
+        <p>Wij zijn Buurtje UNO en wij<br>pijpen dieren. Check onze<br>tabjes voor alle heel nuttige<br>functionaliteiten.</p>
+    </div>
+    <div class="buttons-container">
+        <form method="post" action="{% url 'button_clicked' %}">
+            <button type="submit" name="button" value="1">Home</button>
+            <button type="submit" name="button" value="2">Huiskalender</button>
+            <button type="submit" name="button" value="3">Schoonmaakrooster</button>
+            <button type="submit" name="button" value="4">Ganzenbord Generator</button>
+            <button type="submit" name="button" value="5">Avondeten Generator</button>
+            <button type="submit" name="button" value="6">About</button>
+        </form>
+    </div>
+    <div class="image-container1">
+        <img src="C:/Users/geurt/source/repos/Huiswebsite/Fotos/Boxes.png" alt="Green box1">
+        <img src="C:/Users/geurt/source/repos/Huiswebsite/Fotos/Boxes.png" alt="Green box2">
+        <img src="C:/Users/geurt/source/repos/Huiswebsite/Fotos/Boxes.png" alt="Green box3">
+    </div>
+
+
+
+</body>
+</html>
